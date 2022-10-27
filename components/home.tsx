@@ -26,7 +26,7 @@ export default function Home() {
         <p>Until the end of 2022 we were building a local-first instant-ui multiplayer reference manager as a foundation for a decentralized social network for science.</p>
         <p>I was born in Seattle. My family immigrated to American from the island of Taiwan.</p>
         <p>San Francisco and New York City are cities I have called home. Right now Honolulu is home.</p>
-        <p>I ride a 9'2" Takayama DT-2 and a 9'11" Byzak.</p>
+        <p>I ride a ${`9'2"`} Takayama DT-2 and a ${`9'11"`} Byzak.</p>
 
       </div>
     </div>
