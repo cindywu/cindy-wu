@@ -18,7 +18,7 @@ export default function Home() {
       </div>
       <div>
         <p>I am looking to build software full-time for someone else.</p>
-        <p>In a past life I did science hatching sea-monkeys to feed to zebrafish for tuberculosis research, camped under the stars in the Eastern Washington sagebrush steppe counting insect galls, built logic gates to silence genes using DNA, designed an anthrax therapeutic for the U.S. Army, and programmed immune cells for a universal vaccine.</p>
+        <p>In a past life I did science hatching sea-monkeys to feed to zebrafish for tuberculosis research, camped under the stars in the Eastern Washington sagebrush steppe counting insect galls, built DNA logic gates to silence genes, designed an anthrax therapeutic for the U.S. Army, and programmed immune cells for a universal vaccine.</p>
         <p>The work produced currency in the form of peer-reviewed papers.</p>
         <p>Then, for a decade I poured the entirety of my labor towards breathing life into <Link href="http://experiment.com">Experiment</Link> with my best friend Denny.
         </p>
