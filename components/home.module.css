@@ -1,18 +1,8 @@
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  min-height: 100vh;
   padding: 0 0.5rem;
-  text-align: center;
-}
-
-.cv {
-  color: blue;
-  padding-top: 1rem;
-}
-
-.cv:hover {
-  text-decoration: underline;
+  text-align: left;
+  max-width: 380px;
 }

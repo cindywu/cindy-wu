@@ -7,6 +7,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 * {
