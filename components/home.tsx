@@ -18,7 +18,6 @@ export default function Home() {
       </div>
       <div>
         <p>Welcome to my web presence.</p>
-        <p>I live in Kaimukī on the island of Oʻahu in the Kingdom of Hawaiʻi.</p>
         <p>I was born in Seattle. I grew up in Bellevue. My family is from the island of Taiwan.</p>
         <p>San Francisco and New York City are cities I have called home.</p>
         <p>In a past life I did science hatching sea-monkeys to feed to zebrafish for tuberculosis research, camped under the stars in the eastern washington sagebrush steppe counting insect galls, built logic gates to silence genes using DNA, designed an anthrax therapeutic for the U.S. Army, and programmed immune cells for a universal vaccine.</p>
