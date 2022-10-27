@@ -24,7 +24,7 @@ export default function Home() {
         </p>
         <p>The work landed us prestigious financial support and fancy awards. Some famous people and some respected news sources published very nice words.</p>
         <p>Until the end of 2022 we were building a local-first instant-ui multiplayer reference manager as a foundation for a decentralized social network for science.</p>
-        <p>I was born in Seattle. My family immigrated to American from the island of Taiwan.</p>
+        <p>I was born in Seattle. My family immigrated to America from the island of Taiwan.</p>
         <p>San Francisco and New York City are places I have called home. Today, the Kingdom of Hawaiʻi is home.</p>
         <p>I ride a {`9'2"`} Takayama DT-2 and a {`9'11"`} Byzak. You can find me at first light half a mile offshore of Waikīkī.</p>
       </div>
