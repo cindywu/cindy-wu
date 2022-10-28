@@ -32,12 +32,12 @@ export default function Home() {
   )
 }
 
-function Thing({text, link}: {text?: string, link?: string}) {
+function Thing({text, link}: {text: string, link: string}) {
   return (
     <div className={styles.cv}>
-      <a href={link}>
+      <Link href={link}>
         {text}
-      </a>
+      </Link>
     </div>
   )
 }
