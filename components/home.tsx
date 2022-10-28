@@ -19,10 +19,10 @@ export default function Home() {
       <div>
         <p>I am looking to build software full-time for someone else.</p>
         <p>In a past life I did science hatching sea-monkeys to feed to zebrafish for tuberculosis research, camped under the stars in the Eastern Washington sagebrush steppe counting insect galls, built DNA logic gates to silence genes, designed an anthrax therapeutic for the U.S. Army, and programmed immune cells for a universal vaccine.</p>
-        <p>The work produced currency in the form of peer-reviewed papers.</p>
-        <p>Then, for a decade I poured the entirety of my labor towards breathing life into <Link href="http://experiment.com">Experiment</Link> with my best friend Denny.
+        {/* <p>The work produced currency in the form of peer-reviewed papers.</p> */}
+        <p>For a decade I poured the entirety of my labor towards breathing life into <Link href="http://experiment.com">Experiment</Link> with my best friend Denny.
         </p>
-        <p>The work landed us prestigious financial support and fancy awards. Some famous people and some respected news sources published very nice words.</p>
+        {/* <p>The work landed us prestigious financial support and fancy awards. Some famous people and some respected news sources published very nice words.</p> */}
         <p>Until the end of 2022 we were building a local-first instant-ui multiplayer reference manager as a foundation for a decentralized social network for science.</p>
         <p>I was born in Seattle and grew up in Bellevue. My family immigrated to America from the island of Taiwan.</p>
         <p>San Francisco and New York City are places I have called home. Today, the Kingdom of Hawaiʻi is home.</p>
