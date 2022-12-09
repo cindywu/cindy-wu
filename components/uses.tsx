@@ -195,6 +195,26 @@ export default function Uses() {
             toolName={"Dexcom G6"}
             description={"continuous glucose monitor"}
           />
+          <Tool
+            toolName={"Happy Bob"}
+            description={"glucose buddy"}
+          />
+          <Tool
+            toolName={`9'2" DT-2`}
+            description={"junior"}
+          />
+          <Tool
+            toolName={`9'10" Byzak Pure Fun`}
+            description={"long spoon"}
+          />
+          <Tool
+            toolName={`1999 Subaru Legacy Outback`}
+            description={"a to b and back on time"}
+          />
+          <Tool
+            toolName={"1983 Honda XL200R"}
+            description={"for sale to good home"}
+          />
         </div>
       </div>
     </div>
