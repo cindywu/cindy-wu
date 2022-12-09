@@ -6,7 +6,7 @@ export default function Uses() {
     <div className={"w-screen h-screen overflow-auto dark:bg-zinc-800 dark:text-zinc-300"}>
     <div className={"p-4 max-w-md"}>
       <div className={"text-2xl pb-4 font-medium"}>
-        <span>Cindy Wu</span>
+        <Link className={"no-underline"} href="/">Cindy Wu</Link>
         <span className={"text-zinc-500"}> › Uses</span>
       </div>
       {/* <div>
