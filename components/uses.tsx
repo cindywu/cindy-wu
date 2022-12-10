@@ -20,12 +20,9 @@ export default function Uses() {
         />
       </div> */}
       <div className={"flex-row font-light"}>
-          <Tool
-            toolName={"Secretlab TITAN Evo 2022 Series"}
-            description={"chair"}
-          />
-          <Tool
-            toolName={"IKEA BEKANT"}
+
+          <Category
+            categoryName={"Desktop Software"}
           />
           <Tool
             toolName={"Texts"}
@@ -38,6 +35,10 @@ export default function Uses() {
           />
           <Tool
             toolName={"CleanShot X"}
+          />
+          <Tool
+            toolName={"Actual"}
+            description={"track pennies"}
           />
           <Tool
             toolName={"VSCode"}
@@ -55,7 +56,12 @@ export default function Uses() {
             toolName={"1Password"}
           />
           <Tool
-            toolName={"Copilot"}
+            toolName={"Mac Preview"}
+            description={"look at PDFs"}
+          />
+          <Tool
+            toolName={"Mimestream"}
+            description={"native email client"}
           />
           <Tool
             toolName={"Linear"}
@@ -67,23 +73,20 @@ export default function Uses() {
             toolName={"Trunk"}
           />
           <Tool
-            toolName={"Supabase"}
+            toolName={"Typora"}
           />
           <Tool
-            toolName={"Cloudflare Workers"}
-          />
-          <Tool
-            toolName={"Actual"}
-            description={"track pennies"}
-          />
-          <Tool
-            toolName={"Hawaiian Telcom"}
+            toolName={"Logseq"}
           />
           <Tool
             toolName={"Mathpix"}
           />
           <Tool
-            toolName={"Github"}
+            toolName={"Github Desktop"}
+          />
+
+          <Category
+            categoryName={"Dev Tools"}
           />
           <Tool
             toolName={"Replicache"}
@@ -92,93 +95,50 @@ export default function Uses() {
             toolName={"ProseMirror"}
           />
           <Tool
-            toolName={"Logseq"}
-          />
-          <Tool
-            toolName={"Hawaii State Public Library"}
-          />
-
-          <Tool
             toolName={"Next.js"}
-            description={"Magic"}
+            description={""}
           />
           <Tool
             toolName={"TypeScript"}
           />
           <Tool
-            toolName={"DNSimple"}
-            description={"Domain Management"}
+            toolName={"Tauri"}
           />
           <Tool
-            toolName={"Post-It 3 x 3 inch"}
-            description={"washed denim, fresh mint, limeade, lucky green, sunnyside, vital orange"}
+            toolName={"TailwindCSS"}
+          />
+
+          <Category
+            categoryName={"VSCode Extensions"}
           />
           <Tool
-            toolName={"Keycastr"}
+            toolName={"Copilot"}
           />
-          <Tool
-            toolName={"Mac Preview"}
-            description={"look at PDFs"}
-          />
-          <Tool
-            toolName={"Mimestream"}
-            description={"native email client"}
-          />
-          <Tool
-            toolName={"Macbook Pro 13-inch, 2020"}
-          />
-          <Tool
-            toolName={"Typora"}
-          />
-          <Tool
-            toolName={"Locals"}
-            description={'daily shoes'}
-          />
-          <Tool
-            toolName={"Matunas"}
-            description={"surf wax"}
-          />
-          <Tool
-            toolName={"Copic Multi Liner SP 0.5"}
-          />
-          <Tool
-            toolName={"Hasami Brown Mug Medium"}
-            description={"hot beverage container"}
-          />
-          <Tool
-            toolName={"Spash White Orange Chips Mug"}
-            description={"hot beverage container"}
-          />
-          <Tool
-            toolName={"iPhone 13 Mini"}
-          />
-          <Tool
-            toolName={"Skin Salvation Safeguard SPF 40"}
-            description={"sunscreen"}
+
+          <Category
+            categoryName={"Chrome Extensions"}
           />
           <Tool
             toolName={"Minimal Twitter"}
-            description={"Chrome extension for sanity"}
+            description={""}
+          />
+          <Tool
+            toolName={"Minimal Bookface"}
           />
           <Tool
             toolName={"Momentum Dash"}
           />
           <Tool
-            toolName={"One"}
-            description={"personal bank RIP Simple"}
+            toolName={"AdblockPlus"}
           />
           <Tool
-            toolName={"BECU"}
-            description={"business and personal bank"}
+            toolName={"uBlock Origin"}
           />
-          <Tool
-            toolName={"Sun Bleached"}
-          />
-          <Tool
-            toolName={"Casio F-19W"}
-          />
-          <Tool
-            toolName={"Apple Watch SE 2022"}
+
+
+
+          <Category
+            categoryName={"Mobile Software"}
           />
           <Tool
             toolName={"Strava"}
@@ -191,21 +151,85 @@ export default function Uses() {
             toolName={"Levels"}
             description={"treat myself like a tamagotchi"}
           />
+
+          <Category
+            categoryName={"Apple Watch Complications"}
+          />
           <Tool
-            toolName={"Dexcom G6"}
-            description={"continuous glucose monitor"}
+            toolName={"Dawn Patrol"}
+            description={"looking for replacement"}
           />
           <Tool
             toolName={"Happy Bob"}
             description={"glucose buddy"}
           />
-          <Tool
-            toolName={`9'2" DT-2`}
-            description={"junior"}
+          <Category
+            categoryName={"Web Services"}
           />
           <Tool
-            toolName={`9'10" Byzak Pure Fun`}
-            description={"long spoon"}
+            toolName={"Vercel"}
+          />
+          <Tool
+            toolName={"Supabase"}
+          />
+          <Tool
+            toolName={"Cloudflare"}
+          />
+          <Tool
+            toolName={"Hawaiian Telcom"}
+          />
+          <Tool
+            toolName={"DNSimple"}
+            description={""}
+          />
+          <Tool
+            toolName={"Google Cloud"}
+          />
+          <Tool
+            toolName={"ToDesktop"}
+          />
+
+
+          <Category
+            categoryName={"Hardware"}
+          />
+          <Tool
+            toolName={"Macbook Pro 13-inch, 2020"}
+          />
+          <Tool
+            toolName={"IKEA BEKANT"}
+          />
+          <Tool
+            toolName={"Secretlab TITAN Evo 2022 Series"}
+            description={""}
+          />
+          <Tool
+            toolName={"Copic Multi Liner SP 0.5"}
+          />
+          <Tool
+            toolName={"Post-It 3 x 3 inch"}
+            description={"washed denim, fresh mint, limeade, lucky green, sunnyside, vital orange"}
+          />
+          <Tool
+            toolName={"Hasami Brown Mug Medium"}
+            description={""}
+          />
+          <Tool
+            toolName={"Spash White Orange Chips Mug"}
+            description={""}
+          />
+          <Tool
+            toolName={"iPhone 13 Mini, 2021"}
+          />
+          <Tool
+            toolName={"Casio F-19W"}
+          />
+          <Tool
+            toolName={"Apple Watch SE 2022"}
+          />
+          <Tool
+            toolName={"Dexcom G6"}
+            description={"continuous glucose monitor"}
           />
           <Tool
             toolName={`1999 Subaru Legacy Outback`}
@@ -215,11 +239,129 @@ export default function Uses() {
             toolName={"1983 Honda XL200R"}
             description={"for sale to good home"}
           />
+
+          <Category
+            categoryName={"Surf Hardware"}
+          />
+          <Tool
+            toolName={`9'2" DT-2`}
+            description={"lu jr."}
+          />
+          <Tool
+            toolName={`9'10" Byzak`}
+            description={"ls"}
+          />
+          <Tool
+            toolName={`9'0" DT-1`}
+            description={"ed"}
+          />
+          <Tool
+            toolName={`9'2"`}
+            description={"lu"}
+          />
+          <Tool
+            toolName={`9'6" Juneil Calzo`}
+            description={"al"}
+          />
+          <Tool
+            toolName={`9'4" Hawaiian Rush`}
+            description={"el"}
+          />
+          <Tool
+            toolName={`9'6" Toots`}
+            description={"bb"}
+          />
+          <Tool
+            toolName={"Sun Bleached"}
+          />
+          <Tool
+            toolName={"Matunas"}
+            description={"surf wax"}
+          />
+          <Tool
+            toolName={"Locals"}
+            description={'daily shoes'}
+          />
+          <Tool
+            toolName={"Skin Salvation Safeguard SPF 40"}
+            description={"sunscreen"}
+          />
+
+
+
+          <Category
+            categoryName={"Bank"}
+          />
+          <Tool
+            toolName={"One"}
+            description={"personal bank RIP Simple"}
+          />
+          <Tool
+            toolName={"BECU"}
+            description={"business and personal bank"}
+          />
+          <Category
+            categoryName={"Library Memberships"}
+          />
+          <Tool
+            toolName={"Hawaii State Public Library"}
+          />
+          <Tool
+            toolName={"King County Public Library"}
+          />
+          <Tool
+            toolName={"Seattle Public Library"}
+          />
+          <Tool
+            toolName={"San Francisco Public Library"}
+          />
+          <Tool
+            toolName={"New York Public Library"}
+          />
+          <Tool
+            toolName={"Brooklyn Public Library"}
+          />
+          <Tool
+            toolName={"Los Angeles Public Library"}
+          />
+          <Category
+            categoryName={"Cooking"}
+          />
+          <Tool
+            toolName={"Kerrygold Salted Butter"}
+          />
+          <Tool
+            toolName={"Chosen Foods 100% Pure Avocado Oil"}
+          />
+          <Tool
+            toolName={"Kirkland Signature Toscano Extra Virgin Olive Oil"}
+          />
+          <Tool
+            toolName={"Kirkland Signature California Extra Virgin Olive Oil"}
+          />
+          <Tool
+            toolName={"Diamond Crystal Kosher Salt"}
+          />
+          <Tool
+            toolName={"Maldon Sea Salt"}
+          />
+          <Tool
+            toolName={"Field Company No.8 Cast Iron Skillet"}
+          />
+
         </div>
       </div>
     </div>
   )
 }
+
+function Category({categoryName}: {categoryName: string}) {
+  return (
+    <div className={"font-bold"}>
+      {categoryName}
+    </div>
+  )
+  }
 
 function Tool({toolName, description}: {toolName: string, description?: string}) {
   return (
