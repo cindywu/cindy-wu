@@ -332,6 +332,36 @@ export default function Uses() {
             toolName={"Imperial Motion Luxxe Classic 2mm"}
           />
           <Category
+            categoryName={"Caving Hardware"}
+          />
+          <Tool
+            toolName={"Fenix HL60R"}
+          />
+          <Tool
+            toolName={"ZebraLight H600c Mk"}
+          />
+          <Tool
+            toolName={"Curtec Daren Drum"}
+          />
+          <Tool
+            toolName={"Filson Traditional Crew Socks"}
+          />
+          <Tool
+            toolName={`Xtratuf 15" Legacy Boot`}
+          />
+          <Category
+            categoryName={"Camping Hardware"}
+          />
+          <Tool
+            toolName={"Feathered Friends Egret UL 20/30"}
+          />
+          <Tool
+            toolName={"Feathered Friends Eos Down Jacket"}
+          />
+          <Tool
+            toolName={"Therm-a-Rest NeoAir XLite Sleeping Pad"}
+          />
+          <Category
             categoryName={"Bank"}
           />
           <Tool
