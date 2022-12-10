@@ -169,14 +169,10 @@ export default function Uses() {
 
 
           <Category
-            categoryName={"Mobile Software"}
+            categoryName={"Mobile Applications"}
           />
           <Tool
             toolName={"Strava"}
-          />
-          <Tool
-            toolName={"Dawn Patrol"}
-            description={"looking for replacement"}
           />
           <Tool
             toolName={"Levels"}
@@ -188,7 +184,6 @@ export default function Uses() {
           />
           <Tool
             toolName={"Dawn Patrol"}
-            description={"looking for replacement"}
           />
           <Tool
             toolName={"Happy Bob"}
@@ -219,10 +214,11 @@ export default function Uses() {
           <Tool
             toolName={"ToDesktop"}
           />
-
-
           <Category
             categoryName={"Hardware"}
+          />
+          <Tool
+            toolName={"Olivetti Lettera 35"}
           />
           <Tool
             toolName={"Macbook Pro 13-inch, 2020"}
@@ -348,6 +344,9 @@ export default function Uses() {
           />
           <Tool
             toolName={`Xtratuf 15" Legacy Boot`}
+          />
+          <Tool
+            toolName={"Dr Martens 1460"}
           />
           <Category
             categoryName={"Camping Hardware"}
