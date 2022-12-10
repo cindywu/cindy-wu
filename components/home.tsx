@@ -15,6 +15,10 @@ export default function Home() {
           text={"Github"}
           link={"https://github.com/cindywu"}
         />
+        <Thing
+          text={"Uses"}
+          link={"/uses"}
+        />
       </div>
       <div className={"flex-row font-light"}>
         <div className={"pt-3"}>I am looking to build software full-time for someone else.</div>
