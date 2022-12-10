@@ -31,6 +31,11 @@ export default function Uses() {
             toolName={"Cron"}
           />
           <Tool
+            toolName={"Sunrise"}
+            description={"RIP"}
+            strikethrough={true}
+          />
+          <Tool
             toolName={"Figma"}
           />
           <Tool
@@ -99,15 +104,41 @@ export default function Uses() {
             description={""}
           />
           <Tool
-            toolName={"TypeScript"}
-          />
-          <Tool
             toolName={"Tauri"}
           />
           <Tool
             toolName={"TailwindCSS"}
           />
-
+          <Category
+            categoryName={"Programming Languages"}
+          />
+          <Tool
+            toolName={"TypeScript"}
+          />
+          <Tool
+            toolName={"JavaScript"}
+          />
+          <Tool
+            toolName={"Rust"}
+          />
+          <Tool
+            toolName={"Ruby"}
+          />
+          <Tool
+            toolName={"Python"}
+          />
+          <Tool
+            toolName={"Scheme"}
+          />
+          <Tool
+            toolName={"Clojure"}
+          />
+          <Tool
+            toolName={"Go"}
+          />
+          <Tool
+            toolName={"Java"}
+          />
           <Category
             categoryName={"VSCode Extensions"}
           />
@@ -237,7 +268,7 @@ export default function Uses() {
           />
           <Tool
             toolName={"1983 Honda XL200R"}
-            description={"for sale to good home"}
+            description={"- FOR SALE"}
           />
 
           <Category
@@ -245,7 +276,7 @@ export default function Uses() {
           />
           <Tool
             toolName={`9'2" DT-2`}
-            description={"lu jr."}
+            description={"jr"}
           />
           <Tool
             toolName={`9'10" Byzak`}
@@ -253,7 +284,7 @@ export default function Uses() {
           />
           <Tool
             toolName={`9'0" DT-1`}
-            description={"ed"}
+            description={"ed - FOR SALE"}
           />
           <Tool
             toolName={`9'2"`}
@@ -261,15 +292,26 @@ export default function Uses() {
           />
           <Tool
             toolName={`9'6" Juneil Calzo`}
-            description={"al"}
+            description={"al - SOLD"}
+            strikethrough={true}
           />
           <Tool
             toolName={`9'4" Hawaiian Rush`}
-            description={"el"}
+            description={"el - SOLD"}
+            strikethrough={true}
           />
           <Tool
             toolName={`9'6" Toots`}
-            description={"bb"}
+            description={"bb - SOLD"}
+            strikethrough={true}
+          />
+          <Tool
+            toolName={`6'8" Tristan Emmons`}
+            description={"SOLD"}
+            strikethrough={true}
+          />
+          <Tool
+            toolName={"Dakine Longboard Calf 10' Leash"}
           />
           <Tool
             toolName={"Sun Bleached"}
@@ -284,17 +326,22 @@ export default function Uses() {
           />
           <Tool
             toolName={"Skin Salvation Safeguard SPF 40"}
-            description={"sunscreen"}
+            description={""}
           />
-
-
-
+          <Tool
+            toolName={"Imperial Motion Luxxe Classic 2mm"}
+          />
           <Category
             categoryName={"Bank"}
           />
           <Tool
+            toolName={"Simple"}
+            description={"RIP"}
+            strikethrough={true}
+          />
+          <Tool
             toolName={"One"}
-            description={"personal bank RIP Simple"}
+            description={"personal bank"}
           />
           <Tool
             toolName={"BECU"}
@@ -348,6 +395,10 @@ export default function Uses() {
           <Tool
             toolName={"Field Company No.8 Cast Iron Skillet"}
           />
+          <Tool
+            toolName={"Kewpie"}
+            description={"mayo"}
+          />
 
         </div>
       </div>
@@ -363,11 +414,12 @@ function Category({categoryName}: {categoryName: string}) {
   )
   }
 
-function Tool({toolName, description}: {toolName: string, description?: string}) {
+function Tool({toolName, description, strikethrough}: {toolName: string, description?: string, strikethrough?: boolean}) {
   return (
-    <div>
+    <div className={strikethrough === true ? `line-through` : ''}>
       {toolName}
       {description && <span className={"text-zinc-500"}> {description}</span>}
+
     </div>
   )
 }
