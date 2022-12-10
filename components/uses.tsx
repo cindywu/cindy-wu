@@ -242,7 +242,7 @@ export default function Uses() {
             description={""}
           />
           <Tool
-            toolName={"Spash White Orange Chips Mug"}
+            toolName={"Splash White Orange Chips Mug"}
             description={""}
           />
           <Tool
