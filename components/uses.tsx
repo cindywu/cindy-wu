@@ -275,7 +275,7 @@ export default function Uses() {
             description={"jr"}
           />
           <Tool
-            toolName={`9'10" Byzak`}
+            toolName={`9'11" Byzak`}
             description={"ls"}
           />
           <Tool
