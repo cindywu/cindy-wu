@@ -193,6 +193,9 @@ export default function Uses() {
             categoryName={"Web Services"}
           />
           <Tool
+            toolName={"Craigslist"}
+          />
+          <Tool
             toolName={"Vercel"}
           />
           <Tool
