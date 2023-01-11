@@ -20,20 +20,11 @@ export default function Uses() {
         />
       </div> */}
       <div className={"flex-row font-light"}>
-
           <Category
             categoryName={"Desktop Software"}
           />
           <Tool
             toolName={"Texts"}
-          />
-          <Tool
-            toolName={"Cron"}
-          />
-          <Tool
-            toolName={"Sunrise"}
-            description={"RIP"}
-            strikethrough={true}
           />
           <Tool
             toolName={"Figma"}
@@ -89,7 +80,14 @@ export default function Uses() {
           <Tool
             toolName={"Github Desktop"}
           />
-
+          <Tool
+            toolName={"Cron"}
+          />
+          <Tool
+            toolName={"Sunrise"}
+            description={"RIP"}
+            strikethrough={true}
+          />
           <Category
             categoryName={"Dev Tools"}
           />
@@ -166,8 +164,6 @@ export default function Uses() {
             toolName={"uBlock Origin"}
           />
 
-
-
           <Category
             categoryName={"Mobile Applications"}
           />
@@ -193,6 +189,9 @@ export default function Uses() {
             categoryName={"Web Services"}
           />
           <Tool
+            toolName={"GitHub"}
+          />
+          <Tool
             toolName={"Craigslist"}
           />
           <Tool
@@ -216,6 +215,11 @@ export default function Uses() {
           />
           <Tool
             toolName={"ToDesktop"}
+          />
+          <Tool
+            toolName={"Bold"}
+            description={"RIP"}
+            strikethrough={true}
           />
           <Category
             categoryName={"Hardware"}
@@ -258,6 +262,9 @@ export default function Uses() {
             toolName={"Apple Watch SE 2022"}
           />
           <Tool
+            toolName={"Nomad Rugged Band 40mm/41mm Black/Silver"}
+          />
+          <Tool
             toolName={"Dexcom G6"}
             description={"continuous glucose monitor"}
           />
@@ -269,7 +276,9 @@ export default function Uses() {
             toolName={"1983 Honda XL200R"}
             description={"- FOR SALE"}
           />
-
+          <Tool
+            toolName={"Patagonia Arbor Pack 26L - Emerald Green"}
+          />
           <Category
             categoryName={"Surf Hardware"}
           />
