@@ -217,6 +217,10 @@ export default function Uses() {
             toolName={"ToDesktop"}
           />
           <Tool
+            toolName={"Reading Supply"}
+            description={"writing is thinking"}
+          />
+          <Tool
             toolName={"Bold"}
             description={"RIP"}
             strikethrough={true}
@@ -262,7 +266,7 @@ export default function Uses() {
             toolName={"Apple Watch SE 2022"}
           />
           <Tool
-            toolName={"Nomad Rugged Band 40mm/41mm Black/Silver"}
+            toolName={"Nomad Rugged Band 40mm/41mm Black/Black"}
           />
           <Tool
             toolName={"Dexcom G6"}
