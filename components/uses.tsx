@@ -225,6 +225,9 @@ export default function Uses() {
             description={"RIP"}
             strikethrough={true}
           />
+          <Tool
+            toolName={"Rest Notes"}
+          />
           <Category
             categoryName={"Hardware"}
           />
