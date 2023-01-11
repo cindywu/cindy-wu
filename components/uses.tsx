@@ -473,7 +473,7 @@ function Category({categoryName}: {categoryName: string}) {
   )
   }
 
-function Tool({toolName, description, strikethrough, forSale, wanted}: {toolName: string, description?: string, strikethrough?: boolean, forSale?: boolean, wanted: boolean}) {
+function Tool({toolName, description, strikethrough, forSale, wanted}: {toolName: string, description?: string, strikethrough?: boolean, forSale?: boolean, wanted?: boolean}) {
   return (
     <div className={strikethrough === true ? `line-through` : ''}>
       {toolName}
