@@ -88,6 +88,10 @@ export default function Uses() {
             description={"RIP"}
             strikethrough={true}
           />
+          <Tool
+            toolName={"Zoom"}
+            description={"reluctantly"}
+          />
           <Category
             categoryName={"Dev Tools"}
           />
