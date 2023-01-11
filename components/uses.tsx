@@ -277,8 +277,13 @@ export default function Uses() {
             description={"a to b and back on time"}
           />
           <Tool
+            toolName={`1999 Toyota Camry - Gold`}
+            description={"betsy aka gzort"}
+            forSale={true}
+          />
+          <Tool
             toolName={"1983 Honda XL200R"}
-            description={"- FOR SALE"}
+            forSale={true}
           />
           <Tool
             toolName={"Patagonia Arbor Pack 26L - Emerald Green"}
@@ -299,7 +304,8 @@ export default function Uses() {
           />
           <Tool
             toolName={`9'0" DT-1`}
-            description={"ed - FOR SALE"}
+            description={"ed"}
+            forSale={true}
           />
           <Tool
             toolName={`9'2"`}
@@ -462,11 +468,12 @@ function Category({categoryName}: {categoryName: string}) {
   )
   }
 
-function Tool({toolName, description, strikethrough}: {toolName: string, description?: string, strikethrough?: boolean}) {
+function Tool({toolName, description, strikethrough, forSale}: {toolName: string, description?: string, strikethrough?: boolean, forSale?: boolean}) {
   return (
     <div className={strikethrough === true ? `line-through` : ''}>
       {toolName}
       {description && <span className={"text-zinc-500"}> {description}</span>}
+      {forSale && <span className={"text-red-500"}>{` - FOR SALE`}</span>}
 
     </div>
   )
