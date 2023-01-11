@@ -273,7 +273,7 @@ export default function Uses() {
             description={"continuous glucose monitor"}
           />
           <Tool
-            toolName={`1999 Subaru Legacy Outback`}
+            toolName={`1999 Subaru Legacy Outback - White`}
             description={"a to b and back on time"}
           />
           <Tool
