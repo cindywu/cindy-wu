@@ -283,6 +283,9 @@ export default function Uses() {
           <Tool
             toolName={"Patagonia Arbor Pack 26L - Emerald Green"}
           />
+          <Tool
+            toolName={"02 帽子 JAMSTECロゴ ネイビー - M"}
+          />
           <Category
             categoryName={"Surf Hardware"}
           />
