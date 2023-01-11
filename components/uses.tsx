@@ -277,7 +277,7 @@ export default function Uses() {
             description={"a to b and back on time"}
           />
           <Tool
-            toolName={`1999 Toyota Camry - Gold`}
+            toolName={`1998 Toyota Camry - Gold`}
             description={"betsy aka gzort"}
             forSale={true}
           />
