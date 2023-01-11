@@ -453,6 +453,11 @@ export default function Uses() {
             toolName={"Kewpie"}
             description={"mayo"}
           />
+          <Tool
+            toolName={"Tatung Multi-functional Cooker - Green"}
+            description={"大同6人份不鏽鋼電鍋 -綠色"}
+            wanted={true}
+          />
 
         </div>
       </div>
@@ -468,13 +473,13 @@ function Category({categoryName}: {categoryName: string}) {
   )
   }
 
-function Tool({toolName, description, strikethrough, forSale}: {toolName: string, description?: string, strikethrough?: boolean, forSale?: boolean}) {
+function Tool({toolName, description, strikethrough, forSale, wanted}: {toolName: string, description?: string, strikethrough?: boolean, forSale?: boolean, wanted: boolean}) {
   return (
     <div className={strikethrough === true ? `line-through` : ''}>
       {toolName}
       {description && <span className={"text-zinc-500"}> {description}</span>}
       {forSale && <span className={"text-red-500"}>{` - FOR SALE`}</span>}
-
+      {wanted && <span className={"text-green-500"}>{` - WANTED`}</span>}
     </div>
   )
 }
