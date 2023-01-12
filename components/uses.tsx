@@ -293,6 +293,10 @@ export default function Uses() {
             forSale={true}
           />
           <Tool
+            toolName={"Yahama Zuma - Blue"}
+            description={"trusty steed"}
+          />
+          <Tool
             toolName={"Patagonia Arbor Pack 26L - Emerald Green"}
           />
           <Tool
