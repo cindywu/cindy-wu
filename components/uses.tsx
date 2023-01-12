@@ -297,6 +297,10 @@ export default function Uses() {
             description={"trusty steed"}
           />
           <Tool
+            toolName={"1980 Versailles Peugeot 12-speed - Teal"}
+            description={"world traveler"}
+          />
+          <Tool
             toolName={"Patagonia Arbor Pack 26L - Emerald Green"}
           />
           <Tool
