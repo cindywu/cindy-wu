@@ -4,10 +4,10 @@ import Link from 'next/link'
 export default function softdrinks() {
   return (
     <div className={"w-screen h-screen overflow-auto dark:bg-zinc-800 dark:text-zinc-300"}>
-      <div className={"p-4 max-w-md"}>
+      <div className={"p-4 max-w-lg"}>
         <div className={"pb-2"}>
-          <h1 className={"text-2xl font-medium"}>IRL Founder Interviews Series</h1>
-          <div className={"dark:text-zinc-500"}>{`University of Hawai'i - PACE`}</div>
+          <h1 className={"text-2xl font-medium"}><Link href="/" className={"no-underline"}>Cindy Wu</Link> <span className={"text-zinc-500"}>› IRL Founder Interviews Series</span></h1>
+          <div className={"text-zinc-400 dark:text-zinc-500"}>{`University of Hawai'i - PACE`}</div>
         </div>
         <Video
           title="Cindy Wu - Experiment | Jelly"
@@ -52,7 +52,7 @@ export default function softdrinks() {
 function Video({ title, url, date } : { title: string, url: string, date: string} ) {
   return (
     <div className={"py-1"}>
-      <span className={"font-mono pr-2 text-sm dark:text-zinc-500"}>{date}</span>
+      <span className={"font-mono pr-2 text-sm text-zinc-400 dark:text-zinc-500"}>{date}</span>
       <Link className={"no-underline hover:underline"} href={url}>
         <span>{title}</span>
       </Link>
