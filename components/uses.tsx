@@ -293,7 +293,7 @@ export default function Uses() {
             forSale={true}
           />
           <Tool
-            toolName={"Yahama Zuma - Blue"}
+            toolName={"2009 Yahama Zuma - Blue"}
             description={"trusty steed"}
           />
           <Tool
@@ -467,6 +467,9 @@ export default function Uses() {
           <Tool
             toolName={"Kewpie"}
             description={"mayo"}
+          />
+          <Tool
+            toolName={"Chiquilín Bittersweet Paprika"}
           />
           <Tool
             toolName={"Tatung Multi-functional Cooker - Green"}
