@@ -10,22 +10,22 @@ export default function softdrinks() {
           <div className={"text-zinc-400 dark:text-zinc-500"}>{`University of Hawai'i - PACE`}</div>
         </div>
         <Video
-          title="Cindy Wu - Experiment | Jelly"
+          title="Cindy Wu - Experiment"
           url="https://www.youtube.com/watch?v=O2YcBI-FBZU"
           date="Feb 2020"
         />
         <Video
-          title="David Hirijida - Simple | Acorns"
+          title="David Hirijida - Simple"
           url="https://www.youtube.com/watch?v=Vkh2VAjnxTM"
           date="Feb 2022"
         />
         <Video
-          title="Jonathan Kim - Appcues | Terraformation"
+          title="Jonathan Kim - Appcues"
           url="https://www.youtube.com/watch?v=Xhi0wOgeJoE"
           date="Mar 2022"
         />
         <Video
-          title="Brian Lam - Wirecutter | Gizmodo"
+          title="Brian Lam - Wirecutter"
           url="https://www.youtube.com/watch?v=bMPHn-tvBVI"
           date="May 2022"
         />
@@ -35,7 +35,7 @@ export default function softdrinks() {
           date="Jun 2022"
         />
         <Video
-          title="Yishan Wong - Reddit | Terraformation"
+          title="Yishan Wong - Reddit"
           url="https://www.youtube.com/watch?v=nHR5RviqOeA"
           date="Jul 2022"
         />
