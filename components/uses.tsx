@@ -459,9 +459,6 @@ export default function Uses() {
             toolName={"Kirkland Signature Toscano Extra Virgin Olive Oil"}
           />
           <Tool
-            toolName={"Kirkland Signature California Extra Virgin Olive Oil"}
-          />
-          <Tool
             toolName={"Diamond Crystal Kosher Salt"}
           />
           <Tool
