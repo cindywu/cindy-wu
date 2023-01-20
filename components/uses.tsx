@@ -236,6 +236,12 @@ export default function Uses() {
             categoryName={"Hardware"}
           />
           <Tool
+            toolName={"1980 H.T. Huang Toucan Lamp - Blue/Pink"}
+          />
+          <Tool
+            toolName={"Brother HL-L2370DW series"}
+          />
+          <Tool
             toolName={"Olivetti Lettera 35"}
           />
           <Tool
