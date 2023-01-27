@@ -4,10 +4,10 @@ import Link from 'next/link'
 export default function index() {
   return (
     <div className={"p-4 dark:bg-zinc-800 h-screen overflow-auto"}>
-      <Link href="/home"><div className={"pb-4 text-2xl "}>Cindy Wu › Recurse › Arrows</div></Link>
+      <div className={"pb-4 text-2xl"}><Link className={"no-underline hover:underline"} href="/home">Cindy Wu</Link> › <Link className={"no-underline hover:underline"} href="/recurse">Recurse</Link> › Arrows</div>
       <div>
-        <Link href="http://arrows-alpha.vercel.app"><div>https://arrows-alpha.vercel.app</div></Link>
-        <Link href="https://github.com/cindywu/arrows"><div className={"pb-4"}>github.com/cindywu/arrows</div></Link>
+        <Link className={"no-underline hover:underline"} href="http://arrows-alpha.vercel.app"><div>https://arrows-alpha.vercel.app</div></Link>
+        <Link className={"no-underline hover:underline"} href="https://github.com/cindywu/arrows"><div className={"pb-4"}>github.com/cindywu/arrows</div></Link>
         <div className={"text-2xl pb-2"}>motivation</div>
         <div>
           - crdts are hard to explain to non-crdtians
@@ -24,7 +24,7 @@ export default function index() {
         <div>
         - it took me four years to build the reference manager of my dreams
         </div>
-        <div>- can i buid what i built in 4 years in 4 days?</div>
+        <div>- can i build what i built in 4 years in 4 days?</div>
         <div className={"text-2xl pb-2 pt-8"}>/uses</div>
         <div>
         next.js 13
