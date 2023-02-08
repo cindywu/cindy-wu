@@ -12,7 +12,7 @@ export default function index() {
       <Link className={"no-underline hover:underline"} href="/arrows"><div>arrows</div></Link>
       <Link className={"no-underline hover:underline"} href="/tailwind-desktop"><div>tailwindcss desktop app - mac/windows/linux</div></Link>
       <Link className={"no-underline hover:underline"} href="https://github.com/cindywu/baby-crdt/pull/14"><div>baby crdt v3 - tombstoning some chars to heaven</div></Link>
-      <Link className={"no-underline hover:underline"} href="https://play-mahjong.vercel.app"><div>multiplayer mahjong with real-time video chat baked in to 練習中文</div></Link>
+      <Link className={"no-underline hover:underline"} href="https://play-mahjong.vercel.app"><div>mahjong w/ video chat to 練習中文</div></Link>
     </div>
   )
 }
