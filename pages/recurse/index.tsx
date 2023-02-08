@@ -5,6 +5,7 @@ export default function index() {
   return (
     <div className={"p-4 dark:bg-zinc-800 h-screen"}>
       <div className={"pb-4 text-2xl"}><Link className={"no-underline hover:underline"} href="/">Cindy Wu</Link> › Recurse</div>
+      <div className={"text-zinc-500"}>programming projects</div>
       <Link className={"no-underline hover:underline"} href="https://github.com/cindywu/minimal-linkedin"><div>minimal linkedin</div></Link>
       <Link className={"no-underline hover:underline"} href="https://github.com/cindywu/uses-toy"><div>/uses - what you use determines who you are</div></Link>
       <Link className={"no-underline hover:underline"} href="https://github.com/cindywu/baby-crdt"><div>crdt from scratch v1 - insertions</div></Link>
@@ -17,8 +18,20 @@ export default function index() {
       <div>offline-first are.na backed by estuary<span className={"text-yellow-400"}>{` - coming soon!`}</span></div>
       <div>artisanal redis<span className={"text-yellow-400"}>{` - coming soon!`}</span></div>
       <div>artisanal sqlite<span className={"text-yellow-400"}>{` - coming soon!`}</span></div>
+
+      <div className={"pt-4 text-zinc-500"}>non-technical talks</div>
+      <div>how this way of tying shoelaces is better than other ways</div>
+      <div>seven laws of money</div>
+
+      <div className={"pt-4 text-zinc-500"}>technical talks</div>
+      <div>declutter twitter and linkedin with tiny chrome extension</div>
+      <div>/uses and the joy of vercel preview comments</div>
+      <div>crdt-whatever</div>
+      <div>drawing arrows</div>
+      <div>crdt tombstoning, all deleted chars go to heaven</div>
     </div>
   )
 }
+
 
 
