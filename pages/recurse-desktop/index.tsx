@@ -7,13 +7,13 @@ export default function RecurseDesktop() {
       <div className={"p-4 dark:bg-zinc-800 h-screen"}>
         <div className={"pb-4 text-2xl"}><Link className={"no-underline hover:underline"} href="/home">Cindy Wu</Link> › Recurse Center Desktop Ap - recurse.com</div>
         <div>
-        <Link href={"https://gateway.estuary.tech/gw/ipfs/bafkreifvby2ynquk2v3ismjkhv4tdlbphgaqkhf3f2ibqtyhpfxe64ajzi"}>Mac</Link>
+        <Link href={"https://gateway.estuary.tech/gw/ipfs/bafkreidsob5fmusl6xcm637slrbqioe22idkuljoyodfegc2xrkb6pkbwq"}>Mac</Link>
         </div>
         <div>
-          <Link href="https://gateway.estuary.tech/gw/ipfs/bafybeidge43lxzegwvfbae7eek6mzoriopskl5bgemk4lpsyr7ad4u42uu">Windows</Link>
+          <Link href="https://gateway.estuary.tech/gw/ipfs/bafybeiexts6emh353hm2z2akvkqpc6h6xoaieaoxgtd5ilzjaeap6arzyq">Windows</Link>
         </div>
         <div>
-          <Link href={"https://gateway.estuary.tech/gw/ipfs/bafybeicgyzp7eh4rat5xavnajm5djzyqu4ehkkgb3qei7vzm3kk76z53kq"}>Linux</Link>
+          <Link href={"https://gateway.estuary.tech/gw/ipfs/bafybeibq72pklcuphql6lzi2aexoworbsgham2g2vqf3c2s3lvvsoa5nam"}>Linux</Link>
         </div>
       </div>
     </div>
