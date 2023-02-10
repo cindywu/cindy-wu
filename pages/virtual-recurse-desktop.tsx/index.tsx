@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default function TailwindDesktop() {
+export default function VirtualRecurseDesktop() {
   return (
     <div>
       <div className={"p-4 dark:bg-zinc-800 h-screen"}>
-        <div className={"pb-4 text-2xl"}><Link className={"no-underline hover:underline"} href="/home">Cindy Wu</Link> › Tailwind Desktop App - tailwindcss.com</div>
+        <div className={"pb-4 text-2xl"}><Link className={"no-underline hover:underline"} href="/home">Cindy Wu</Link> › Virtual Recurse Desktop App - recurse.rctogether.com/online</div>
         <div>
         <Link href={"https://gateway.estuary.tech/gw/ipfs/bafkreifvby2ynquk2v3ismjkhv4tdlbphgaqkhf3f2ibqtyhpfxe64ajzi"}>Mac</Link>
         </div>

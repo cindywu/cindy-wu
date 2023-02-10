@@ -19,16 +19,24 @@ export default function index() {
       <div>artisanal redis<span className={"text-yellow-400"}>{` - coming soon!`}</span></div>
       <div>artisanal sqlite<span className={"text-yellow-400"}>{` - coming soon!`}</span></div>
 
+      <div className={"pt-4 text-zinc-500"}>desktop apps</div>
+      <Link className={"no-underline hover:underline"} href="/tailwind-desktop"><div>tailwindcss</div></Link>
+      <Link className={"no-underline hover:underline"} href="recurse-desktop"><div>recurse</div></Link>
+      <Link className={"no-underline hover:underline"} href="/virtual-recurse-desktop"><div>virtual recurse</div></Link>
+      <Link className={"no-underline hover:underline"} href="/recurse-calendar-desktop"><div>recurse calendar</div></Link>
+
       <div className={"pt-4 text-zinc-500"}>non-technical talks</div>
       <div>how this way of tying shoelaces is better than other ways</div>
-      <div>seven laws of money</div>
+      <div>money will come when you are doing the right thing</div>
+      <div>on being a maker in a manager&#39;s world</div>
 
       <div className={"pt-4 text-zinc-500"}>technical talks</div>
       <div>declutter twitter and linkedin with tiny chrome extension</div>
       <div>/uses and the joy of vercel preview comments</div>
       <div>crdt-whatever</div>
       <div>drawing arrows</div>
-      <div>crdt tombstoning, all deleted chars go to heaven</div>
+      <div>crdt tombstoning, all deleted characters go to heaven</div>
+      <div>multiplayer mahjong to 練習中文</div>
     </div>
   )
 }
