@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function index() {
   return (
-    <div className={"p-4 dark:bg-zinc-800 h-screen"}>
+    <div className={"p-4 dark:bg-zinc-800 h-screen overflow-auto"}>
       <div className={"pb-4 text-2xl"}><Link className={"no-underline hover:underline"} href="/">Cindy Wu</Link> › Recurse</div>
       <div className={"text-zinc-500"}>programming projects</div>
       <Link className={"no-underline hover:underline"} href="https://github.com/cindywu/minimal-linkedin"><div>minimal linkedin</div></Link>
