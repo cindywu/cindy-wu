@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import useSWR from 'swr'
 
 const fetcher = () => fetch('/api/rs').then((res) => res.json())
