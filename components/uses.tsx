@@ -9,16 +9,6 @@ export default function Uses() {
         <Link className={"no-underline"} href="/">Cindy Wu</Link>
         <span className={"text-zinc-500"}> › Uses</span>
       </div>
-      {/* <div>
-        <Thing
-          text={"CV"}
-          link={"https://read.cv/cindywu"}
-        />
-        <Thing
-          text={"Github"}
-          link={"https://github.com/cindywu"}
-        />
-      </div> */}
       <div className={"flex-row font-light"}>
           <Category
             categoryName={"Desktop Software"}
@@ -44,6 +34,9 @@ export default function Uses() {
           />
           <Tool
             toolName={"Google Chrome"}
+          />
+          <Tool
+            toolName={"Arc"}
           />
           <Tool
             toolName={"iTerm2"}
@@ -88,6 +81,10 @@ export default function Uses() {
             description={"RIP"}
             strikethrough={true}
           />
+          <Tool
+            toolName={"Twitch Studio"}
+          />
+
           <Tool
             toolName={"Zoom"}
             description={"reluctantly"}
@@ -147,6 +144,18 @@ export default function Uses() {
           <Tool
             toolName={"Copilot"}
           />
+          <Tool
+            toolName={"Night Owl"}
+          />
+          <Tool
+            toolName={"Live Share"}
+          />
+          <Tool
+            toolName={"Prettier"}
+          />
+          <Tool
+            toolName={"ES7+ React/Redux/React-Native snippets"}
+          />
 
           <Category
             categoryName={"Chrome Extensions"}
@@ -192,9 +201,7 @@ export default function Uses() {
           <Category
             categoryName={"Web Services"}
           />
-          <Tool
-            toolName={"GitHub"}
-          />
+
           <Tool
             toolName={"Craigslist"}
           />
@@ -230,13 +237,33 @@ export default function Uses() {
             strikethrough={true}
           />
           <Tool
+            toolName={"Wikipedia"}
+          />
+          <Tool
+            toolName={"GitHub"}
+          />
+          <Tool
             toolName={"Rest Notes"}
           />
+          <Tool
+            toolName={"Twitter"}
+          />
+
+          <Tool
+            toolName={"Reddit"}
+          />
+          <Tool
+            toolName={"Twitch"}
+          />
+
           <Category
             categoryName={"Hardware"}
           />
           <Tool
             toolName={"1980 H.T. Huang Toucan Lamp - Blue/Pink"}
+          />
+          <Tool
+            toolName={"Blue Yeti Microphone - Blackout"}
           />
           <Tool
             toolName={"Brother HL-L2370DW series"}
@@ -245,7 +272,13 @@ export default function Uses() {
             toolName={"Olivetti Lettera 35"}
           />
           <Tool
+            toolName={"Merchant and Mills Rapid Repair Kit"}
+          />
+          <Tool
             toolName={"Macbook Pro 13-inch, 2020"}
+          />
+          <Tool
+            toolName={"Airpods 2nd Generation "}
           />
           <Tool
             toolName={"IKEA BEKANT"}
@@ -258,8 +291,14 @@ export default function Uses() {
             toolName={"Copic Multi Liner SP 0.5"}
           />
           <Tool
+            toolName={"Maruman M.memo DMP-A7 Grid Notepad"}
+          />
+          <Tool
             toolName={"Post-It 3 x 3 inch"}
             description={"washed denim, fresh mint, limeade, lucky green, sunnyside, vital orange"}
+          />
+          <Tool
+            toolName={"Brother HL-L2370DW series"}
           />
           <Tool
             toolName={"Hasami Brown Mug Medium"}
@@ -488,7 +527,7 @@ export default function Uses() {
 
 function Category({categoryName}: {categoryName: string}) {
   return (
-    <div className={"font-bold"}>
+    <div className={"font-bold pt-4"}>
       {categoryName}
     </div>
   )

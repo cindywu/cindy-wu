@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default function index() {
+export default function Index() {
   return (
     <div className={"p-4 dark:bg-zinc-800 h-screen overflow-auto"}>
       <div className={"pb-4 text-2xl"}><Link className={"no-underline hover:underline"} href="/">Cindy Wu</Link> › Recurse</div>
