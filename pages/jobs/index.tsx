@@ -32,6 +32,15 @@ export default function index() {
     <div>
       Amit Gupta
     </div>
+    <div>
+      Nick Tommarello
+    </div>
+    <div>
+      Paul Copplestone
+    </div>
+    <div>
+      Ant Wilson
+    </div>
     </div>
   )
 }
