@@ -1,5 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
+import { desktopSoftware } from '../data/desktop-software'
+import { devTools } from '../data/dev-tools'
+import { programmingLanguages } from '../data/programming-languages'
+import { vscodeExtensions } from '../data/vscode-extensions'
 
 export default function Uses() {
   return (
@@ -12,153 +16,24 @@ export default function Uses() {
       <div className={"flex-row font-light"}>
           <Category
             categoryName={"Desktop Software"}
-          />
-          <Tool
-            toolName={"Texts"}
-          />
-          <Tool
-            toolName={"Figma"}
-          />
-          <Tool
-            toolName={"CleanShot X"}
-          />
-          <Tool
-            toolName={"Actual"}
-            description={"track pennies"}
-          />
-          <Tool
-            toolName={"VSCode"}
-          />
-          <Tool
-            toolName={"Spotify"}
-          />
-          <Tool
-            toolName={"Google Chrome"}
-          />
-          <Tool
-            toolName={"Arc"}
-          />
-          <Tool
-            toolName={"iTerm2"}
-          />
-          <Tool
-            toolName={"1Password"}
-          />
-          <Tool
-            toolName={"Mac Preview"}
-            description={"look at PDFs"}
-          />
-          <Tool
-            toolName={"Mimestream"}
-            description={"native email client"}
-          />
-          <Tool
-            toolName={"Linear"}
-          />
-          <Tool
-            toolName={"TablePlus"}
-          />
-          <Tool
-            toolName={"Trunk"}
-          />
-          <Tool
-            toolName={"Typora"}
-          />
-          <Tool
-            toolName={"Logseq"}
-          />
-          <Tool
-            toolName={"Mathpix"}
-          />
-          <Tool
-            toolName={"Github Desktop"}
-          />
-          <Tool
-            toolName={"Cron"}
-          />
-          <Tool
-            toolName={"Sunrise"}
-            description={"RIP"}
-            strikethrough={true}
-          />
-          <Tool
-            toolName={"Twitch Studio"}
-          />
-
-          <Tool
-            toolName={"Zoom"}
-            description={"reluctantly"}
+            data={desktopSoftware}
           />
           <Category
             categoryName={"Dev Tools"}
-          />
-          <Tool
-            toolName={"Replicache"}
-          />
-          <Tool
-            toolName={"ProseMirror"}
-          />
-          <Tool
-            toolName={"Next.js"}
-            description={""}
-          />
-          <Tool
-            toolName={"Tauri"}
-          />
-          <Tool
-            toolName={"TailwindCSS"}
+            data={devTools}
           />
           <Category
             categoryName={"Programming Languages"}
-          />
-          <Tool
-            toolName={"TypeScript"}
-          />
-          <Tool
-            toolName={"JavaScript"}
-          />
-          <Tool
-            toolName={"Rust"}
-          />
-          <Tool
-            toolName={"Ruby"}
-          />
-          <Tool
-            toolName={"Python"}
-          />
-          <Tool
-            toolName={"Scheme"}
-          />
-          <Tool
-            toolName={"Clojure"}
-          />
-          <Tool
-            toolName={"Go"}
-          />
-          <Tool
-            toolName={"Java"}
+            data={programmingLanguages}
           />
           <Category
             categoryName={"VSCode Extensions"}
-          />
-          <Tool
-            toolName={"Copilot"}
-          />
-          <Tool
-            toolName={"Night Owl"}
-          />
-          <Tool
-            toolName={"Live Share"}
-          />
-          <Tool
-            toolName={"Prettier"}
-          />
-          <Tool
-            toolName={"ES7+ React/Redux/React-Native snippets"}
+            data={vscodeExtensions}
           />
 
           <Category
             categoryName={"Chrome Extensions"}
+            data={null}
           />
           <Tool
             toolName={"Minimal Twitter"}
@@ -179,6 +54,7 @@ export default function Uses() {
 
           <Category
             categoryName={"Mobile Applications"}
+            data={null}
           />
           <Tool
             toolName={"Strava"}
@@ -190,6 +66,7 @@ export default function Uses() {
 
           <Category
             categoryName={"Apple Watch Complications"}
+            data={null}
           />
           <Tool
             toolName={"Dawn Patrol"}
@@ -200,6 +77,7 @@ export default function Uses() {
           />
           <Category
             categoryName={"Web Services"}
+            data={null}
           />
 
           <Tool
@@ -258,6 +136,7 @@ export default function Uses() {
 
           <Category
             categoryName={"Hardware"}
+            data={null}
           />
           <Tool
             toolName={"1980 H.T. Huang Toucan Lamp - Blue/Pink"}
@@ -353,6 +232,7 @@ export default function Uses() {
           />
           <Category
             categoryName={"Surf Hardware"}
+            data={null}
           />
           <Tool
             toolName={`9'2" DT-2`}
@@ -414,6 +294,7 @@ export default function Uses() {
           />
           <Category
             categoryName={"Caving Hardware"}
+            data={null}
           />
           <Tool
             toolName={"Fenix HL60R"}
@@ -435,6 +316,7 @@ export default function Uses() {
           />
           <Category
             categoryName={"Camping Hardware"}
+            data={null}
           />
           <Tool
             toolName={"Feathered Friends Egret UL 20/30"}
@@ -447,6 +329,7 @@ export default function Uses() {
           />
           <Category
             categoryName={"Bank"}
+            data={null}
           />
           <Tool
             toolName={"Simple"}
@@ -463,6 +346,7 @@ export default function Uses() {
           />
           <Category
             categoryName={"Library Memberships"}
+            data={null}
           />
           <Tool
             toolName={"Hawaii State Public Library"}
@@ -487,6 +371,7 @@ export default function Uses() {
           />
           <Category
             categoryName={"Cooking"}
+            data={null}
           />
           <Tool
             toolName={"Kerrygold Salted Butter"}
@@ -525,11 +410,28 @@ export default function Uses() {
   )
 }
 
-function Category({categoryName}: {categoryName: string}) {
+function Category({categoryName, data}: {categoryName: string, data:any}) {
   return (
+    <>
     <div className={"font-bold pt-4"}>
       {categoryName}
+
     </div>
+      {data && data.map((tool : any) => {
+        const { toolName, description, strikethrough, forSale, wanted } = tool
+        return (
+          <Tool
+            key={toolName}
+            toolName={toolName}
+            description={description ? description : null}
+            strikethrough={strikethrough ? strikethrough : null}
+            forSale={forSale ? forSale : null}
+            wanted={wanted ? wanted : null}
+          />
+        )
+
+      })}
+    </>
   )
   }
 
