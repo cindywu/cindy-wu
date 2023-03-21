@@ -209,8 +209,8 @@ export default function Uses() {
           />
           <Tool
             toolName={`1998 Toyota Camry - Gold`}
-            description={"betsy aka gzort"}
-            forSale={true}
+            description={"betsy aka gzort - SOLD "}
+            strikethrough={true}
           />
           <Tool
             toolName={"1983 Honda XL200R"}
