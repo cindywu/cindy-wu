@@ -41,19 +41,6 @@ export default function Home() {
   }
 
   return (
-    <div
-      style={{
-        position: "absolute",
-        display: "flex",
-        flexDirection: "column",
-        left: 0,
-        top: 0,
-        width: "100%",
-        height: "100%",
-        background: "rgb(229,229,229)",
-      }}
-    >
-      <Note reflect={reflect} />
-    </div>
+    <Note reflect={reflect} />
   );
 }
