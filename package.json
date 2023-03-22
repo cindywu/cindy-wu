@@ -4,14 +4,20 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "dev-worker": "wrangler dev",
+    "build": "rm -rf dist && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@cloudflare/workers-types": "^4.20230321.0",
+    "@rocicorp/reflect": "^0.13.1",
+    "@rocicorp/reflect-server": "^0.22.0",
     "next": "^13.2.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "replicache-react": "^2.10.1",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@types/node": "18.11.7",
@@ -23,6 +29,7 @@
     "eslint-config-next": "13.0.0",
     "postcss": "^8.4.18",
     "tailwindcss": "^3.2.1",
-    "typescript": "4.8.4"
+    "typescript": "4.8.4",
+    "wrangler": "^2.13.0"
   }
 }
