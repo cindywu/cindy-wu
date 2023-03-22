@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
-import { desktopSoftware } from '../data/desktop-software'
-import { devTools } from '../data/dev-tools'
-import { programmingLanguages } from '../data/programming-languages'
-import { vscodeExtensions } from '../data/vscode-extensions'
+import { desktopSoftware } from '../datamodel/desktop-software'
+import { devTools } from '../datamodel/dev-tools'
+import { programmingLanguages } from '../datamodel/programming-languages'
+import { vscodeExtensions } from '../datamodel/vscode-extensions'
 
 export default function Uses() {
   return (
