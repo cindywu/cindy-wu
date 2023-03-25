@@ -1,10 +1,11 @@
 import React from 'react'
-import { useNoteIDs, useNoteByID } from '../datamodel/subscriptions'
+import { useFlatNotes } from '../datamodel/subscriptions'
 import Link from 'next/link'
 import { dateInWords } from '../util/dateInWords'
 
 export default function Note({reflect}:any) {
-  const ids = useNoteIDs(reflect)
+  const notes = useFlatNotes(reflect)
+
   return (
     <div className={"w-screen h-screen overflow-auto dark:bg-zinc-800 dark:text-zinc-300"}>
     <div className={"p-4 max-w-md"}>
@@ -14,12 +15,11 @@ export default function Note({reflect}:any) {
         </Link>
         <span className={"text-zinc-500"}> › Notes</span></div>
         <div className={""}>
-        {ids && ids.map((id:any) => {
+        {notes && notes.map((note:any) => {
           return (
           <NoteTitle
-            key={id}
-            noteID={id}
-            reflect={reflect}
+            key={note.id}
+            note={note}
           />
         )})}
       </div>
@@ -28,12 +28,11 @@ export default function Note({reflect}:any) {
   )
 }
 
-function NoteTitle({noteID, reflect}: {noteID: string, reflect:any}){
-  const note : any = useNoteByID(reflect, noteID)
+function NoteTitle({note}: {note: any}){
 
   return (
     <div className={"py-4"}>
-      <div className={"text-xs"}>{note && dateInWords(new Date(note.date))}</div>
+      <div className={"text-xs"}>{note && dateInWords(note.date)}</div>
       <div>{note && note.content}</div>
     </div>
   )
