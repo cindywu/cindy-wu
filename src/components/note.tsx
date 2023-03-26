@@ -1,6 +1,7 @@
 import React from 'react'
 import { useFlatNotes } from '../datamodel/subscriptions'
 import Link from 'next/link'
+import ReactMarkdown from 'react-markdown'
 import { dateInWords } from '../util/dateInWords'
 
 export default function Note({reflect}:any) {
@@ -33,7 +34,7 @@ function NoteTitle({note}: {note: any}){
   return (
     <div className={"py-4"}>
       <div className={"text-xs"}>{note && dateInWords(note.date)}</div>
-      <div>{note && note.content}</div>
+      <ReactMarkdown>{note && note.content}</ReactMarkdown>
     </div>
   )
 }
