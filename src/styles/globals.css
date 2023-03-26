@@ -30,3 +30,10 @@ code {
   color: #e83e8c;
   font-size: .9rem;
 }
+
+blockquote {
+  margin-top: 1rem;
+  border-left: 3px solid lightgrey;
+  padding-left: 1rem;
+  margin-left: 0;
+}
