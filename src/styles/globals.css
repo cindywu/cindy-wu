@@ -25,3 +25,8 @@ a {
     background: black;
   }
 }
+
+code {
+  color: #e83e8c;
+  font-size: .9rem;
+}
