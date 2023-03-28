@@ -15,9 +15,13 @@ export default function Home() {
           text={"Github"}
           link={"https://github.com/cindywu"}
         />
-        <Thing
+        {/* <Thing
           text={"Uses"}
           link={"/uses"}
+        /> */}
+        <Thing
+          text={"Notes"}
+          link={"/notes"}
         />
       </div>
       <div className={"flex-row font-light"}>
