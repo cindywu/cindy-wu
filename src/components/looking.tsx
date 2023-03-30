@@ -23,6 +23,8 @@ export default function Looking() {
 
   Not interested in AI, unless witchy. Not interested in web3, unless it involves decentralized file storage or governance for IRL assets. Not interested in science tech or tools for thought; I need a break.
 
+  Open to relocation for the right opportunity.
+
   *ciindy.wu at gmail dot com*
   `
 
