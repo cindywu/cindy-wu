@@ -30,8 +30,9 @@ export default function Home() {
         <div className={"pt-3"}>For a decade I poured the entirety of my labor towards breathing life into <Link href="http://experiment.com">Experiment</Link> with my best friend Denny.
         </div>
         <div className={"pt-3"}>Until the end of 2022 I was building at <Link href="http://jellypbc.com">Jelly Public Benefit Corporation</Link> a local-first instant-ui multiplayer reference manager as a foundation for a decentralized social network for science.</div>
+        <div className={"pt-3"}>In 2023, I spent all my hours <Link href="/recurse">programming programs</Link> for the joy of programming at <Link href="https://recurse.com">The Recurse Center</Link>.</div>
         <div className={"pt-3"}>I was born in Seattle and grew up in Bellevue. My family immigrated to America from the island of Taiwan.</div>
-        <div className={"pt-3"}>San Francisco and New York City are places I have called home. Today, the Kingdom of Hawaiʻi is home.</div>
+        <div className={"pt-3"}>San Francisco and New York City are places I have called home. Today, the Kingdom of Haiwaiʻi is home.</div>
         <div className={"pt-3"}>I ride a {`9'2"`} Takayama DT-2 and a {`9'11"`} Byzak. You can find me at first light half a mile offshore of Waikīkī.</div>
       </div>
     </div>
