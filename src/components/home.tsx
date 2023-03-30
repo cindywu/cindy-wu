@@ -25,7 +25,7 @@ export default function Home() {
         />
       </div>
       <div className={"flex-row font-light"}>
-        <div className={"pt-3"}>I am looking to build software full-time for someone else.</div>
+        <div className={"pt-3"}>I am <Link href="/what-i-am-looking-for">looking to build software full-time</Link> for someone else.</div>
         <div className={"pt-3"}>In a past life I did science hatching sea-monkeys to feed to zebrafish for tuberculosis research, camped under the stars in the Eastern Washington sagebrush steppe counting insect galls, built DNA logic gates to silence genes, designed an anthrax therapeutic for the U.S. Army, and programmed immune cells for a universal vaccine.</div>
         <div className={"pt-3"}>For a decade I poured the entirety of my labor towards breathing life into <Link href="http://experiment.com">Experiment</Link> with my best friend Denny.
         </div>

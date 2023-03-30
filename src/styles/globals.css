@@ -37,3 +37,17 @@ blockquote {
   padding-left: 1rem;
   margin-left: 0;
 }
+
+p {
+  padding-bottom: 1rem;
+}
+
+ul {
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+
+li {
+  list-style-type: square;
+}
+
