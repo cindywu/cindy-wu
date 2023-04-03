@@ -2,6 +2,7 @@ import type { Reflect } from "@rocicorp/reflect";
 import { useSubscribe } from "replicache-react";
 import type { M } from "./mutators";
 import { getNote, notePrefix } from "./note";
+import { getStatus, statusPrefix } from './status';
 
 export function useNoteIDs(reflect: Reflect<M>) {
   return useSubscribe(
@@ -42,7 +43,16 @@ export function useNotes(reflect: Reflect<M>) {
     []
   )
 }
-
+export function useStatuses(reflect: Reflect<M>) {
+  return useSubscribe(
+    reflect,
+    async(tx) => {
+      const statuses = await tx.scan({ prefix: statusPrefix }).entries().toArray();
+      return statuses
+    },
+    []
+  )
+}
 
 export function useNoteByID(reflect: Reflect<M>, id: string) {
   return useSubscribe(

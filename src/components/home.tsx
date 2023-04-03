@@ -1,29 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
+import { useStatuses } from '../datamodel/subscriptions'
 
-export default function Home() {
+export default function Home({reflect}:any) {
+
+  const statuses : any = useStatuses(reflect)
+  const [showLastUpdated, setShowLastUpdated] = useState<boolean>(false)
+
   return (
     <div className={"w-screen h-screen overflow-auto dark:bg-zinc-800 dark:text-zinc-300"}>
     <div className={"p-4 max-w-md"}>
-      <div className={"text-2xl pb-4 font-medium"}>Cindy Wu</div>
-      <div>
-        <Thing
-          text={"CV"}
-          link={"https://read.cv/cindywu"}
-        />
-        <Thing
-          text={"Github"}
-          link={"https://github.com/cindywu"}
-        />
-        {/* <Thing
-          text={"Uses"}
-          link={"/uses"}
-        /> */}
-        <Thing
-          text={"Notes"}
-          link={"/notes"}
-        />
+      <div className={"flex flex-col pb-4"}>
+        <div className={"text-2xl font-medium"}>Cindy Wu</div>
+        {statuses && statuses[0] && statuses[0][1] &&
+          <div className={"text-sm font-normal pt-1 text-zinc-500"}>
+            <span
+              className={"cursor-pointer"}
+              onMouseOver={() => {setShowLastUpdated(true)}}
+              onMouseLeave={() => {setShowLastUpdated(false)}}
+            >is {statuses[0][1].content}.</span>
+            { showLastUpdated && <span className={'pl-2'}>(last seen {
+              parseInt((((new Date() as any) - (new Date(statuses[0][1].date) as any)) as any)/1000/60 as unknown as any)
+            } min ago)</span>}
+          </div>
+        }
       </div>
+
       <div className={"flex-row font-light"}>
         <div className={"pt-3"}>I am <Link href="/what-i-am-looking-for">looking to build software full-time</Link> for someone else.</div>
         <div className={"pt-3"}>In a past life I did science hatching sea-monkeys to feed to zebrafish for tuberculosis research, camped under the stars in the Eastern Washington sagebrush steppe counting insect galls, built DNA logic gates to silence genes, designed an anthrax therapeutic for the U.S. Army, and programmed immune cells for a universal vaccine.</div>
@@ -35,6 +37,27 @@ export default function Home() {
         <div className={"pt-3"}>San Francisco and New York City are places I have called home. Today, the Kingdom of Haiwaiʻi is home.</div>
         <div className={"pt-3"}>I ride a {`9'2"`} Takayama DT-2 and a {`9'11"`} Byzak. You can find me at first light half a mile offshore of Waikīkī.</div>
       </div>
+      <div className={"flex font-light pt-4"}>
+        <Thing
+          text={"CV"}
+          link={"https://read.cv/cindywu"}
+        />
+        <div className={"px-2"}>|</div>
+        <Thing
+          text={"Github"}
+          link={"https://github.com/cindywu"}
+        />
+        <div className={"px-2"}>|</div>
+        <Thing
+          text={"Uses"}
+          link={"/uses"}
+        />
+        <div className={"px-2"}>|</div>
+        <Thing
+          text={"Notes"}
+          link={"/notes"}
+        />
+      </div>
     </div>
     </div>
   )
@@ -43,7 +66,10 @@ export default function Home() {
 function Thing({text, link}: {text: string, link: string}) {
   return (
     <div>
-      <Link href={link}>
+      <Link
+        // className={"no-underline hover:underline"}
+        href={link}
+      >
         {text}
       </Link>
     </div>
