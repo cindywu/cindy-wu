@@ -13,6 +13,7 @@
     "@cloudflare/workers-types": "^4.20230321.0",
     "@rocicorp/reflect": "^0.13.1",
     "@rocicorp/reflect-server": "^0.22.0",
+    "@vercel/analytics": "^0.1.11",
     "next": "^13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
