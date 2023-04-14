@@ -12,7 +12,24 @@ export default function Home() {
       <div className={"flex flex-col pb-4"}>
         <div className={"text-2xl font-medium"}>Cindy Wu</div>
         <ReflectDependentThing
-
+        />
+      </div>
+      <div className={"font-light py-4"}>
+        <Thing
+          text={"CV"}
+          link={"https://read.cv/cindywu"}
+        />
+        <Thing
+          text={"Github"}
+          link={"https://github.com/cindywu"}
+        />
+        <Thing
+          text={"Uses"}
+          link={"/uses"}
+        />
+        <Thing
+          text={"Notes"}
+          link={"/notes"}
         />
       </div>
       <div className={"flex-row font-light"}>
@@ -29,27 +46,7 @@ export default function Home() {
         <div className={"pt-3"}>Currently I am training for a 2.8 mile open water swim.</div>
 
       </div>
-      <div className={"flex font-light pt-4"}>
-        <Thing
-          text={"CV"}
-          link={"https://read.cv/cindywu"}
-        />
-        <div className={"px-2"}>|</div>
-        <Thing
-          text={"Github"}
-          link={"https://github.com/cindywu"}
-        />
-        <div className={"px-2"}>|</div>
-        <Thing
-          text={"Uses"}
-          link={"/uses"}
-        />
-        <div className={"px-2"}>|</div>
-        <Thing
-          text={"Notes"}
-          link={"/notes"}
-        />
-      </div>
+
     </div>
     </div>
   )
@@ -59,7 +56,7 @@ function Thing({text, link}: {text: string, link: string}) {
   return (
     <div>
       <Link
-        // className={"no-underline hover:underline"}
+        className={"no-underline hover:underline"}
         href={link}
       >
         {text}
