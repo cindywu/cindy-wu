@@ -37,7 +37,7 @@ export default function Home() {
           </div>
           <div className={"pt-3"}>
             Until the end of 2022 I was building at{" "}
-            <Link href='http://jellypbc.com'>Jelly </Link> a local-first
+            <Link href='http://jellypbc.com'>Jelly</Link> a local-first
             multiplayer reference manager as a foundation for a decentralized
             social network for science.
           </div>
