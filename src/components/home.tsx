@@ -9,22 +9,23 @@ export default function Home() {
   return (
     <div
       className={
-        'w-screen h-screen overflow-auto dark:bg-zinc-800 dark:text-zinc-300'
+        'h-screen w-screen overflow-auto dark:bg-zinc-800 dark:text-zinc-300'
       }
     >
-      <div className={'p-4 max-w-md'}>
+      <div className={'max-w-md p-4'}>
         <div className={'flex flex-col pb-4'}>
           <div className={'text-2xl font-medium'}>Cindy Wu</div>
           <ReflectDependentThing />
         </div>
         <div className={'flex-row font-light'}>
-          <div className={'pt-3'}>
+          <div className={'pt-3 line-through'}>
             I am{' '}
-            <Link href='/what-i-am-looking-for'>
+            <Link href="/what-i-am-looking-for">
               looking to build software full-time
             </Link>{' '}
             for someone else.
           </div>
+
           {/* <div className={"pt-3"}>In a past life I did science hatching sea-monkeys to feed to zebrafish for tuberculosis research, camped under the stars in the Eastern Washington sagebrush steppe counting insect galls, built DNA logic gates to silence genes, designed an anthrax therapeutic for the U.S. Army, and programmed immune cells for a universal vaccine.</div> */}
           <div className={'pt-3'}>
             A long time ago, I made an anthrax therapeutic for the U.S. Army and
@@ -32,20 +33,20 @@ export default function Home() {
           </div>
           <div className={'pt-3'}>
             For a decade I poured the entirety of my labor towards breathing
-            life into <Link href='http://experiment.com'>Experiment</Link> with
+            life into <Link href="http://experiment.com">Experiment</Link> with
             my best friend Denny.
           </div>
           <div className={'pt-3'}>
             Until the end of 2022 I was building at{' '}
-            <Link href='http://jellypbc.com'>Jelly</Link> a local-first
+            <Link href="http://jellypbc.com">Jelly</Link> a local-first
             multiplayer reference manager as a foundation for a decentralized
             social network for science.
           </div>
           <div className={'pt-3'}>
             In 2023, I spent all my hours{' '}
-            <Link href='/recurse'>programming programs</Link> for the joy of
+            <Link href="/recurse">programming programs</Link> for the joy of
             programming at{' '}
-            <Link href='https://recurse.com'>The Recurse Center</Link>.
+            <Link href="https://recurse.com">The Recurse Center</Link>.
           </div>
           <div className={'pt-3'}>
             I was born in Seattle and grew up in Bellevue. My family immigrated
@@ -63,7 +64,7 @@ export default function Home() {
             Currently I am training for a 2.3 mile open water swim.
           </div>
         </div>
-        <div className={'flex font-light pt-4'}>
+        <div className={'flex pt-4 font-light'}>
           <Thing text={'CV'} link={'https://read.cv/cindywu'} />
           <div className={'px-2'}>|</div>
           <Thing text={'Github'} link={'https://github.com/cindywu'} />
@@ -142,7 +143,7 @@ function OtherThing({ reflect }: { reflect: any }) {
   return (
     <div>
       {statuses && statuses[0] && statuses[0][1] && (
-        <div className={'text-sm font-normal pt-1 text-zinc-500'}>
+        <div className={'pt-1 text-sm font-normal text-zinc-500'}>
           <span
             className={'cursor-pointer'}
             onMouseOver={() => {
