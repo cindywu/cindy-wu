@@ -18,7 +18,7 @@ export default function Home() {
           <ReflectDependentThing />
         </div>
         <div className={'flex-row font-light'}>
-          <div className={'pt-3'}>
+          <div className={'pt-3 line-through'}>
             I am{' '}
             <Link href="/what-i-am-looking-for">
               looking to build software full-time
