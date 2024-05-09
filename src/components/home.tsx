@@ -74,8 +74,12 @@ export default function Home() {
           <Thing text={'Notes'} link={'/notes'} />
           <div className={'px-2'}>|</div>
           <div>
-            <a id="rc-ring-prev" href="https://ring.recurse.com/prev?id=27">
-              {`<-`}
+            <a
+              className="no-underline"
+              id="rc-ring-prev"
+              href="https://ring.recurse.com/prev?id=27"
+            >
+              {`←`}
             </a>
           </div>
           <div>
@@ -88,8 +92,12 @@ export default function Home() {
             </a>
           </div>
           <div>
-            <a id="rc-ring-next" href="https://ring.recurse.com/next?id=27">
-              {`->`}
+            <a
+              className="no-underline"
+              id="rc-ring-next"
+              href="https://ring.recurse.com/next?id=27"
+            >
+              {`→`}
             </a>
           </div>
         </div>
