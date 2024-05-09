@@ -72,6 +72,8 @@ export default function Home() {
           <Thing text={'Uses'} link={'/uses'} />
           <div className={'px-2'}>|</div>
           <Thing text={'Notes'} link={'/notes'} />
+          <div className={'px-2'}>|</div>
+          <Thing text={'RC Webring'} link={'https://ring.recurse.com/'} />
         </div>
       </div>
     </div>
