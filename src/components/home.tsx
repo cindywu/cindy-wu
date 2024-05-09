@@ -73,7 +73,25 @@ export default function Home() {
           <div className={'px-2'}>|</div>
           <Thing text={'Notes'} link={'/notes'} />
           <div className={'px-2'}>|</div>
-          <Thing text={'RC Webring'} link={'https://ring.recurse.com/'} />
+          <div>
+            <a id="rc-ring-prev" href="https://ring.recurse.com/prev?id=27">
+              {`<-`}
+            </a>
+          </div>
+          <div>
+            <a
+              id="rc-ring-home"
+              data-rc-uuid="8d3d2e0b-d885-4db8-bd2d-8c9928b79437"
+              href="https://ring.recurse.com/"
+            >
+              RC Webring
+            </a>
+          </div>
+          <div>
+            <a id="rc-ring-next" href="https://ring.recurse.com/next?id=27">
+              {`->`}
+            </a>
+          </div>
         </div>
       </div>
     </div>
